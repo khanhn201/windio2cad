@@ -223,19 +223,19 @@ if __name__ == "__main__":
     print(lofted_shape)
     print(lofted_shape.shape)
     
-    savemat('data2.mat', {'lofted_shape': lofted_shape})
+    savemat('data.mat', {'lofted_shape': lofted_shape})
     
-    fig = plt.figure(figsize=(10, 6))
-    ax = fig.add_subplot(111, projection='3d')
-    for i in range(lofted_shape.shape[0]):
-        slice_i = lofted_shape[i]
-        ax.plot(slice_i[:, 0], slice_i[:, 1], slice_i[:, 2], color='b', alpha=0.3)
-
-    ax.set_title('Lofted Turbine Blade Outline')
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    plt.tight_layout()
-    plt.show()
+    # fig = plt.figure(figsize=(10, 6))
+    # ax = fig.add_subplot(111, projection='3d')
+    # for i in range(lofted_shape.shape[0]):
+    #     slice_i = lofted_shape[i]
+    #     ax.plot(slice_i[:, 0], slice_i[:, 1], slice_i[:, 2], color='b', alpha=0.3)
+    #
+    # ax.set_title('Lofted Turbine Blade Outline')
+    # ax.set_xlabel('X')
+    # ax.set_ylabel('Y')
+    # ax.set_zlabel('Z')
+    # plt.tight_layout()
+    # plt.show()
             
     print("Done!")
